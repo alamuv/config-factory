@@ -95,4 +95,4 @@ Run tests with `yarn test`
 
 - [@neezer](https://github.com/neezer)
 
-[joi]: https://github.com/hapijs/joi Joi
+[joi]: https://github.com/hapijs/joi "Joi"
