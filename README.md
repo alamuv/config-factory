@@ -1,5 +1,10 @@
 # ConfigFactory
 
+[![Build Status](https://travis-ci.org/kofile/config-factory.svg?branch=master)](https://travis-ci.org/kofile/config-factory)
+[![Coverage Status](https://coveralls.io/repos/github/kofile/config-factory/badge.svg?branch=master)](https://coveralls.io/github/kofile/config-factory?branch=master)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+
 ConfigFactory is a small helper function that helps you to safely and easily create configuration objects from an externally injected source. You can also pass-in default values and [Joi][joi] validation schemas, and you'll get easy-to-handle errors if your config object doesn't pass validation.
 
 ## Usage
