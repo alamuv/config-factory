@@ -1,0 +1,56 @@
+{
+  "name": "@beardedtim/dummy-template",
+  "version": "0.0.0-semantically-released",
+  "description": "Config client with optional validation",
+  "author": "Evan Sherwood <evan@sherwood.io>",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "commitizen": "^2.9.6",
+    "coveralls": "^2.13.1",
+    "cz-cli": "^1.0.0",
+    "cz-conventional-changelog": "^2.0.0",
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.0",
+    "nyc": "^11.1.0",
+    "prettier-standard": "^6.0.0",
+    "semantic-release": "^7.0.2",
+    "sinon": "^4.0.1",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-standard",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "commit": "git-cz",
+    "lint": "standard | snazzy",
+    "test": "nyc ava",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "nyc": {
+    "include": [
+      "index.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kofile/config-factory.git"
+  },
+  "dependencies": {
+    "joi": "^13.0.0"
+  }
+}
