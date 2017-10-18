@@ -1,5 +1,5 @@
 {
-  "name": "@beardedtim/dummy-template",
+  "name": "@kofile/config-factory",
   "version": "0.0.0-semantically-released",
   "description": "Config client with optional validation",
   "author": "Evan Sherwood <evan@sherwood.io>",
