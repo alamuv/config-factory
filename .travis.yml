@@ -8,6 +8,7 @@ notifications:
 node_js:
   - '8'
 script:
+  - ls -al
   - yarn test
   - yarn lint
 after_success:
